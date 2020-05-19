@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(225deg, transparent, #fff, #ffd, #ffe, transparent);
+  background-repeat: no-repeat;
+}
+
+.container .card {
+  width: 350px;
+  height: 400px;
+  background-color: #029;
+  position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 10px #002199f8;
+          box-shadow: 0px 0px 10px #002199f8;
+}
+
+.container .card .img-box {
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  border-radius: 4px;
+  width: 90%;
+  height: 70%;
+  top: -10%;
+  left: 5%;
+  background-color: #011028;
+  position: absolute;
+  margin: 0em auto;
+}
+
+.container .card .img-box img {
+  width: 100%;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.container .card .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  opacity: 0;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container .card .content h2 {
+  text-transform: uppercase;
+  padding-top: 1em;
+}
+
+.container .card .content p {
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.container .card:hover {
+  height: 500px;
+}
+
+.container .card:hover .img-box {
+  height: 60%;
+}
+
+.container .card:hover .content {
+  top: 65%;
+  opacity: 1;
+}
+
+.container-password {
+  background-color: #0199;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-password .password-content {
+  height: 400px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-password .password-content .header {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #470547;
+  height: 3rem;
+  width: 100%;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container-password .password-content .header h3 {
+  background-color: white;
+  height: 3rem;
+  width: 50%;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin-right: 1em;
+  margin-left: 0.5em;
+  word-break: break-all;
+}
+
+.container-password .password-content .header p {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  padding: 1em;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.container-password .password-content .header p:hover {
+  color: #470247;
+  background-color: #ee85ee;
+}
+
+.container-password .password-content .selections {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.container-password .password-content .selections form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 100%;
+  background-color: purple;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+}
+
+.container-password .password-content .selections form label,
+.container-password .password-content .selections form input,
+.container-password .password-content .selections form button {
+  cursor: pointer;
+}
+
+.container-password .password-content .selections form label {
+  font-weight: bold;
+}
+
+.container-password .password-content .selections form .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-password .password-content .selections form .amount label {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.container-password .password-content .selections form .amount .input-box {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-password .password-content .selections form .amount .input-box #amountNumber {
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: 0.5em;
+}
+
+.container-password .password-content .selections form .uppercase,
+.container-password .password-content .selections form .numbers,
+.container-password .password-content .selections form .special-characters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-password .password-content .selections form button {
+  padding: 0.5em 1em;
+  border: none;
+  font-size: 1rem;
+  background-color: #5e0c6e;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.meter {
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.meter .strength-meter {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.meter .strength-meter .strength-bar {
+  width: 90%;
+  display: block;
+  margin: 3em auto;
+  position: relative;
+  height: 3rem;
+  border: 5px solid rebeccapurple;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.meter .strength-meter .strength-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: calc(1% * var(--strength, 0));
+  background: -webkit-gradient(linear, left top, right top, from(#f00), color-stop(#ff0), to(#0f0));
+  background: linear-gradient(to right, #f00, #ff0, #0f0);
+}
+/*# sourceMappingURL=style.css.map */
