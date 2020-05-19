@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="meter">
+      <div class="strength-meter">
+        <div class="strength-bar"></div>
+        <input type="text" />
+        <div class="reasons">
+          <!-- <p>reasons</p>
+          <p>reasons</p> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-password">
+      <div class="password-content">
+        <div class="header">
+          <h3 class="password-display"></h3>
+          <p>Copy</p>
+        </div>
+        <div class="selections">
+          <form>
+            <div class="amount">
+              <label for="amountNumber">Number of Characters</label>
+              <div class="input-box">
+                <input
+                  type="range"
+                  name="range"
+                  id="amountRange"
+                  min="7"
+                  max="30"
+                  value="10"
+                />
+                <input
+                  type="number"
+                  name="number"
+                  id="amountNumber"
+                  min="7"
+                  max="30"
+                  value="10"
+                />
+              </div>
+            </div>
+            <div class="uppercase">
+              <label for="uppercase">Include Uppercase</label>
+              <input type="checkbox" name="uppercase" id="uppercase" />
+            </div>
+            <!-- <div class="lowercase">
+              <label for="lowercase">Include Lowercase</label>
+              <input type="checkbox" name="lowercase" id="lowercase" />
+            </div> -->
+            <div class="numbers">
+              <label for="numbers">Include Numbers</label>
+              <input type="checkbox" name="numbers" id="numbers" />
+            </div>
+            <div class="special-characters">
+              <label for="specialCharacters">Include Special Characters</label>
+              <input
+                type="checkbox"
+                name="specialCharacters"
+                id="specialCharacters"
+              />
+            </div>
+            <button type="submit">Generate Password</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="container">
+      <div class="card">
+        <div class="img-box">
+          <img
+            src="./Char_GetToKnow_Batman80_5ca54cb83a27a6.53173051.png"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+            ipsa tempora consequatur sequi ut odio magni hic molestiae minus
+            explicabo?
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./password.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
